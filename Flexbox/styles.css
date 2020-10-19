@@ -1,0 +1,45 @@
+
+html,
+body,
+#app {
+    height: 100%;
+    margin: 0;
+    border: 1px solid #f00 ;
+   
+}
+#app{
+    display: flex;
+    /* Padrao flex-direction: row;*/
+
+    flex-direction: row;
+/*
+	row: div uma do lado do outro, row-reverse Da esquerda para direita 
+	column: div uma em cima do outro, column-reverse De baixo para cima 
+*/
+
+    /* align-items : flex-end; */
+/*  
+	Alinhamento no eixo ao contrario do flex-direction
+	flex-start: inicio, center: centro flex-end: final
+*/
+
+    justify-content: space-around;
+/*  
+	Alinhamento no mesmo eixo do flex-direction
+	flex-start: inicio, center: centro flex-end: final
+	space-between: espaçamento igual entre os elementos sem conta o espaço da borda
+	space-around: espaçamento igual entre os elementos incluído o espaço da borda
+*/
+
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: #f00;
+    margin: 5px;
+
+    /* flex: 1; */
+}
